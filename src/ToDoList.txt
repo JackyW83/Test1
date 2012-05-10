@@ -1,3 +1,0 @@
-1) Update metadata in sql script.
-changes:
-   1. BugNet

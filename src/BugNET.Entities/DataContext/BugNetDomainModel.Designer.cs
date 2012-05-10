@@ -3246,53 +3246,26 @@ namespace BugNET.Entities.DataContext
         /// <summary>
         /// Create a new BugNet_IssueWorkReports object.
         /// </summary>
-        /// <param name="issueWorkReportId">Initial value of the IssueWorkReportId property.</param>
         /// <param name="issueId">Initial value of the IssueId property.</param>
         /// <param name="workDate">Initial value of the WorkDate property.</param>
         /// <param name="duration">Initial value of the Duration property.</param>
         /// <param name="issueCommentId">Initial value of the IssueCommentId property.</param>
         /// <param name="userId">Initial value of the UserId property.</param>
-        public static BugNet_IssueWorkReports CreateBugNet_IssueWorkReports(global::System.Int32 issueWorkReportId, global::System.Int32 issueId, global::System.DateTime workDate, global::System.Decimal duration, global::System.Int32 issueCommentId, global::System.Guid userId)
+        /// <param name="id">Initial value of the Id property.</param>
+        public static BugNet_IssueWorkReports CreateBugNet_IssueWorkReports(global::System.Int32 issueId, global::System.DateTime workDate, global::System.Decimal duration, global::System.Int32 issueCommentId, global::System.Guid userId, global::System.Guid id)
         {
             BugNet_IssueWorkReports bugNet_IssueWorkReports = new BugNet_IssueWorkReports();
-            bugNet_IssueWorkReports.IssueWorkReportId = issueWorkReportId;
             bugNet_IssueWorkReports.IssueId = issueId;
             bugNet_IssueWorkReports.WorkDate = workDate;
             bugNet_IssueWorkReports.Duration = duration;
             bugNet_IssueWorkReports.IssueCommentId = issueCommentId;
             bugNet_IssueWorkReports.UserId = userId;
+            bugNet_IssueWorkReports.Id = id;
             return bugNet_IssueWorkReports;
         }
 
         #endregion
         #region Primitive Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Int32 IssueWorkReportId
-        {
-            get
-            {
-                return _IssueWorkReportId;
-            }
-            set
-            {
-                if (_IssueWorkReportId != value)
-                {
-                    OnIssueWorkReportIdChanging(value);
-                    ReportPropertyChanging("IssueWorkReportId");
-                    _IssueWorkReportId = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("IssueWorkReportId");
-                    OnIssueWorkReportIdChanged();
-                }
-            }
-        }
-        private global::System.Int32 _IssueWorkReportId;
-        partial void OnIssueWorkReportIdChanging(global::System.Int32 value);
-        partial void OnIssueWorkReportIdChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -3413,6 +3386,33 @@ namespace BugNET.Entities.DataContext
         private global::System.Guid _UserId;
         partial void OnUserIdChanging(global::System.Guid value);
         partial void OnUserIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Guid Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Guid _Id;
+        partial void OnIdChanging(global::System.Guid value);
+        partial void OnIdChanged();
 
         #endregion
     
@@ -3431,47 +3431,20 @@ namespace BugNET.Entities.DataContext
         /// <summary>
         /// Create a new BugNet_Languages object.
         /// </summary>
-        /// <param name="languageId">Initial value of the LanguageId property.</param>
         /// <param name="cultureCode">Initial value of the CultureCode property.</param>
         /// <param name="cultureName">Initial value of the CultureName property.</param>
-        public static BugNet_Languages CreateBugNet_Languages(global::System.Int32 languageId, global::System.String cultureCode, global::System.String cultureName)
+        /// <param name="id">Initial value of the Id property.</param>
+        public static BugNet_Languages CreateBugNet_Languages(global::System.String cultureCode, global::System.String cultureName, global::System.Guid id)
         {
             BugNet_Languages bugNet_Languages = new BugNet_Languages();
-            bugNet_Languages.LanguageId = languageId;
             bugNet_Languages.CultureCode = cultureCode;
             bugNet_Languages.CultureName = cultureName;
+            bugNet_Languages.Id = id;
             return bugNet_Languages;
         }
 
         #endregion
         #region Primitive Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Int32 LanguageId
-        {
-            get
-            {
-                return _LanguageId;
-            }
-            set
-            {
-                if (_LanguageId != value)
-                {
-                    OnLanguageIdChanging(value);
-                    ReportPropertyChanging("LanguageId");
-                    _LanguageId = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("LanguageId");
-                    OnLanguageIdChanged();
-                }
-            }
-        }
-        private global::System.Int32 _LanguageId;
-        partial void OnLanguageIdChanging(global::System.Int32 value);
-        partial void OnLanguageIdChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -3544,6 +3517,33 @@ namespace BugNET.Entities.DataContext
         private global::System.String _FallbackCulture;
         partial void OnFallbackCultureChanging(global::System.String value);
         partial void OnFallbackCultureChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Guid Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Guid _Id;
+        partial void OnIdChanging(global::System.Guid value);
+        partial void OnIdChanged();
 
         #endregion
     
@@ -7991,47 +7991,20 @@ namespace BugNET.Entities.DataContext
         /// <summary>
         /// Create a new BugNet_RequiredFieldList object.
         /// </summary>
-        /// <param name="requiredFieldId">Initial value of the RequiredFieldId property.</param>
         /// <param name="fieldName">Initial value of the FieldName property.</param>
         /// <param name="fieldValue">Initial value of the FieldValue property.</param>
-        public static BugNet_RequiredFieldList CreateBugNet_RequiredFieldList(global::System.Int32 requiredFieldId, global::System.String fieldName, global::System.String fieldValue)
+        /// <param name="id">Initial value of the Id property.</param>
+        public static BugNet_RequiredFieldList CreateBugNet_RequiredFieldList(global::System.String fieldName, global::System.String fieldValue, global::System.Guid id)
         {
             BugNet_RequiredFieldList bugNet_RequiredFieldList = new BugNet_RequiredFieldList();
-            bugNet_RequiredFieldList.RequiredFieldId = requiredFieldId;
             bugNet_RequiredFieldList.FieldName = fieldName;
             bugNet_RequiredFieldList.FieldValue = fieldValue;
+            bugNet_RequiredFieldList.Id = id;
             return bugNet_RequiredFieldList;
         }
 
         #endregion
         #region Primitive Properties
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Int32 RequiredFieldId
-        {
-            get
-            {
-                return _RequiredFieldId;
-            }
-            set
-            {
-                if (_RequiredFieldId != value)
-                {
-                    OnRequiredFieldIdChanging(value);
-                    ReportPropertyChanging("RequiredFieldId");
-                    _RequiredFieldId = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("RequiredFieldId");
-                    OnRequiredFieldIdChanged();
-                }
-            }
-        }
-        private global::System.Int32 _RequiredFieldId;
-        partial void OnRequiredFieldIdChanging(global::System.Int32 value);
-        partial void OnRequiredFieldIdChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -8080,6 +8053,33 @@ namespace BugNET.Entities.DataContext
         private global::System.String _FieldValue;
         partial void OnFieldValueChanging(global::System.String value);
         partial void OnFieldValueChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Guid Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Guid _Id;
+        partial void OnIdChanging(global::System.Guid value);
+        partial void OnIdChanged();
 
         #endregion
     

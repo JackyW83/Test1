@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BugNET.Entities.DataContext.BugNetDataContextModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+    <Schema Namespace="BugNET.Entities.DataContext.BugNetDataContextModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="BugNETEntitiesDataContextBugNetDataContextModelStoreContainer">
           <EntitySet Name="BugNet_ApplicationLog" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ApplicationLog" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="BugNet_HostSettings" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_HostSettings" store:Type="Tables" Schema="dbo" />
@@ -275,9 +275,9 @@
         </EntityType>
         <EntityType Name="BugNet_IssueWorkReports">
           <Key>
-            <PropertyRef Name="IssueWorkReportId" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="IssueWorkReportId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
           <Property Name="IssueId" Type="int" Nullable="false" />
           <Property Name="WorkDate" Type="datetime" Nullable="false" />
           <Property Name="Duration" Type="decimal" Nullable="false" Precision="4" Scale="2" />
@@ -286,9 +286,9 @@
         </EntityType>
         <EntityType Name="BugNet_Languages">
           <Key>
-            <PropertyRef Name="LanguageId" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="LanguageId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
           <Property Name="CultureCode" Type="nvarchar" Nullable="false" MaxLength="50" />
           <Property Name="CultureName" Type="nvarchar" Nullable="false" MaxLength="200" />
           <Property Name="FallbackCulture" Type="nvarchar" MaxLength="50" />
@@ -495,9 +495,9 @@
         </EntityType>
         <EntityType Name="BugNet_RequiredFieldList">
           <Key>
-            <PropertyRef Name="RequiredFieldId" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="RequiredFieldId" Type="int" Nullable="false" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
           <Property Name="FieldName" Type="nvarchar" Nullable="false" MaxLength="50" />
           <Property Name="FieldValue" Type="nvarchar" Nullable="false" MaxLength="50" />
         </EntityType>
@@ -924,8 +924,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="BugNET.Entities.DataContext.BugNetDataContextModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
@@ -1196,23 +1195,23 @@
         </EntityType>
         <EntityType Name="BugNet_IssueWorkReports">
           <Key>
-            <PropertyRef Name="IssueWorkReportId" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="IssueWorkReportId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IssueId" Type="Int32" Nullable="false" />
           <Property Name="WorkDate" Type="DateTime" Nullable="false" />
           <Property Name="Duration" Type="Decimal" Nullable="false" Precision="4" Scale="2" />
           <Property Name="IssueCommentId" Type="Int32" Nullable="false" />
           <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Type="Guid" Name="Id" Nullable="false" />
         </EntityType>
         <EntityType Name="BugNet_Languages">
           <Key>
-            <PropertyRef Name="LanguageId" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="LanguageId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CultureCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="CultureName" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
           <Property Name="FallbackCulture" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Type="Guid" Name="Id" Nullable="false" />
         </EntityType>
         <EntityType Name="BugNet_Permissions">
           <Key>
@@ -1454,11 +1453,11 @@
         </EntityType>
         <EntityType Name="BugNet_RequiredFieldList">
           <Key>
-            <PropertyRef Name="RequiredFieldId" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="RequiredFieldId" Type="Int32" Nullable="false" />
           <Property Name="FieldName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="FieldValue" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Type="Guid" Name="Id" Nullable="false" />
         </EntityType>
         <EntityType Name="BugNet_Roles">
           <Key>
@@ -1951,16 +1950,16 @@
             <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
           <EntitySetMapping Name="BugNet_IssueWorkReports"><EntityTypeMapping TypeName="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueWorkReports"><MappingFragment StoreEntitySet="BugNet_IssueWorkReports">
-            <ScalarProperty Name="IssueWorkReportId" ColumnName="IssueWorkReportId" />
-            <ScalarProperty Name="IssueId" ColumnName="IssueId" />
+            <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IssueId" ColumnName="IssueId" />
             <ScalarProperty Name="WorkDate" ColumnName="WorkDate" />
             <ScalarProperty Name="Duration" ColumnName="Duration" />
             <ScalarProperty Name="IssueCommentId" ColumnName="IssueCommentId" />
             <ScalarProperty Name="UserId" ColumnName="UserId" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
           <EntitySetMapping Name="BugNet_Languages"><EntityTypeMapping TypeName="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Languages"><MappingFragment StoreEntitySet="BugNet_Languages">
-            <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
-            <ScalarProperty Name="CultureCode" ColumnName="CultureCode" />
+            <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CultureCode" ColumnName="CultureCode" />
             <ScalarProperty Name="CultureName" ColumnName="CultureName" />
             <ScalarProperty Name="FallbackCulture" ColumnName="FallbackCulture" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
@@ -2106,8 +2105,8 @@
             <ScalarProperty Name="RelationType" ColumnName="RelationType" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
           <EntitySetMapping Name="BugNet_RequiredFieldList"><EntityTypeMapping TypeName="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RequiredFieldList"><MappingFragment StoreEntitySet="BugNet_RequiredFieldList">
-            <ScalarProperty Name="RequiredFieldId" ColumnName="RequiredFieldId" />
-            <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+            <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FieldName" ColumnName="FieldName" />
             <ScalarProperty Name="FieldValue" ColumnName="FieldValue" />
           </MappingFragment></EntityTypeMapping></EntitySetMapping>
           <EntitySetMapping Name="BugNet_Roles"><EntityTypeMapping TypeName="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Roles"><MappingFragment StoreEntitySet="BugNet_Roles">
@@ -2178,7 +2177,7 @@
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues" Width="1.5" PointX="5.25" PointY="32.625" Height="6.787822265624996" IsExpanded="true" />
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueVotes" Width="1.5" PointX="0.75" PointY="7.75" Height="1.7879850260416674" IsExpanded="true" />
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueWorkReports" Width="1.5" PointX="2.75" PointY="7.75" Height="2.1725878906249996" IsExpanded="true" />
-        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Languages" Width="1.5" PointX="4.75" PointY="7.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Languages" Width="1.5" PointX="4.75" PointY="7.75" Height="1.7879850260416657" IsExpanded="true" />
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Permissions" Width="1.5" PointX="0.75" PointY="22" Height="1.7879850260416745" IsExpanded="true" />
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCategories" Width="1.5" PointX="3" PointY="19.125" Height="2.3648893229166674" IsExpanded="true" />
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFields" Width="1.5" PointX="6" PointY="27.375" Height="2.9417936197916674" IsExpanded="true" />
@@ -2197,7 +2196,7 @@
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Queries" Width="1.5" PointX="3" PointY="53.75" Height="2.3648893229166674" IsExpanded="true" />
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_QueryClauses" Width="1.5" PointX="5.25" PointY="53.625" Height="2.749492187499996" IsExpanded="true" />
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RelatedIssues" Width="1.5" PointX="6.75" PointY="7.75" Height="1.5956835937500102" IsExpanded="true" />
-        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RequiredFieldList" Width="1.5" PointX="8.75" PointY="0.75" Height="1.5956835937500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RequiredFieldList" Width="1.5" PointX="8.75" PointY="0.75" Height="1.59568359375" IsExpanded="true" />
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Roles" Width="1.5" PointX="3" PointY="24.625" Height="2.5571907552083246" IsExpanded="true" />
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserProfiles" Width="1.5" PointX="8.75" PointY="3.75" Height="2.7494921875000102" IsExpanded="true" />
         <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserProjects" Width="1.5" PointX="3" PointY="60.375" Height="2.172587890624996" IsExpanded="true" />
