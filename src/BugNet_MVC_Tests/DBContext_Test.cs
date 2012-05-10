@@ -12,18 +12,18 @@ namespace BugNET.Tests.MVC_Test
         [TestMethod]
         public void DBContextCreated()
         {
-            //BugNET.Entities.DataContext.BugNetDomainConnection context = new BugNET.Entities.DataContext.BugNetDomainConnection();
+            BugNET.Entities.DataContext.BugNetDomainDataContext context = new BugNET.Entities.DataContext.BugNetDomainDataContext();
 
-            //try
-            //{
-            //    var projects = context.BugNet_Projects.Local;
-            //    Assert.IsNotNull(projects);
-            //}
-            //catch (Exception ex)
-            //{
+            try
+            {
+                var projects = context.BugNet_Projects.Local;
+                Assert.IsNotNull(projects);
+            }
+            catch (Exception ex)
+            {
 
-            //    throw;
-            //}
+                throw;
+            }
             
             
            
