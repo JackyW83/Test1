@@ -1,19 +1,192 @@
 <html>
- 
-<ul> <h3> Database changes: </h3> 
+<h3> Database changes:
+<ul>  </h3> 
  
 <div>
-   <li> BugNet_RequiredFieldList :
-        [RequriedFieldId] [int] -> [Id] [uniqueIdentifier]</li>
+   <li>BugNet_RequiredFieldList  :</li> <ul>  
+   <li>   
+        [RequriedFieldId] [int] -> [Id] [uniqueIdentifier]</li></ul>
    
-   <li> BugNet_Languages :
-        [LanguageId] [int] -> [Id] [uniqueIdentifier]</li>
+   <li>BugNet_Languages :</li> <ul> 
+   <li>  
+        [LanguageId] [int] -> [Id] [uniqueIdentifier]</li></ul>
 
-   <li> BugNet_IssueWorkReports :
-        [IssueWorkReportId] [int] -> [Id] [uniqueIdentifier]</li>
+   <li>BugNet_IssueWorkReports :</li> <ul>   
+   <li> 
+        [IssueWorkReportId] [int] -> [Id] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_ApplicationLog  :</li>  <ul>
+   <li>  
+        [Id] [int] -> [Id] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_IssueAttachments  :</li> <ul>
+   <li> 
+        [IssueAttachmentId] [int] -> [Id] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_IssueComments  :</li>   <ul>
+   <li> 
+        [IssueCommentId] [int] -> [Id] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_IssueHistory  :</li>   <ul>
+   <li> 
+        [IssueHistoryId] [int] -> [Id] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_IssueNotifications  : <ul>
+   <li>   
+        [IssueNotificationId] [int] -> [Id] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_IssueRevisions  :</li>   <ul>
+   <li> BugNet_IssueRevisions  :   
+        [IssueRevisionId] [int] -> [Id] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_IssueVotes  :</li>    <ul>
+   <li> 
+        [IssueVoteId] [int] -> [Id] [uniqueIdentifier]</li></ul>
+ 
+   <li>BugNet_Permissions  : </li>  <ul>
+   <li> 
+        [PermissionId] [int] -> [Id] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_RolePermissions  :</li>  <ul>
+        <li>[PermissionId] [int] -> [PermissionId] [uniqueIdentifier]</li>
+        <li>[RoleId] [int] -> [RoleId] [uniqueIdentifier]</li></ul>
+        
+   <li>BugNet_Roles  :</li>  <ul>
+        <li>[RoleId] [int] -> [Id] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_UserRoles  :</li>  <ul>
+        <li>[RoleId] [int] -> [RoleId] [uniqueIdentifier]</li>
+	<li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_ProjectIssueFields  :</li>  <ul>
+        <li>[ProjectIssueFieldId] [int] -> [RoleId] [uniqueIdentifier]</li>
+	<li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li></ul>
+    
+   <li>BugNet_ProjectCustomFieldTypes  :</li>  <ul>
+        <li>[CustomFieldTypeId] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[CustomFieldTypeName] [nvarchar(50)] -> [Name] [nvarchar(50)]</li></ul>
+
+   <li>BugNet_ProjectCustomFields  :</li>  <ul>
+        <li>[CustomFieldId] [int] -> [Id] [uniqueIdentifier]</li>
+        <li>[CustomFieldTypeId] [int] -> [CustomFieldTypeId] [uniqueIdentifier]</li>
+	<li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_ProjectCustomFieldSelections  :</li>  <ul>
+        <li>[CustomFieldSelectionId] [int] -> [Id] [uniqueIdentifier]</li>
+        <li>[CustomFieldId] [int] -> [CustomFieldId] [uniqueIdentifier]</li>
+	<li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li>
+	 <li>[CustomFieldSelectionValue [nchar(255)] -> [Value] [nchar(255)]</li>
+        <li>[CustomFieldSelectionName] [nchar(255)] -> [Name] [nchar(255)]</li>
+	<li>[CustomFieldSelectionSortOrder] [int] -> [SortOrder] [uniqueIdentifier]</li></ul>
+
+
+   <li>BugNet_ProjectCustomFieldValues  :</li>  <ul>
+        <li>[CustomFieldValueId] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[IssueId] [int] -> [IssueId] [uniqueIdentifier]</li>
+        <li>[CustomFieldId] [int] -> [CustomFieldId] [uniqueIdentifier]</li></ul>
+
+   <li>BugNet_ProjectMailBoxes  :</li>  <ul>
+        <li>[ProjectMailboxId] [int] -> [Id] [uniqueIdentifier]</li> 
+        <li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li></ul>
+
+<li>BugNet_UserProjects  :</li>  <ul>
+        <li>[ProjectId] [int] -> [Id] [uniqueIdentifier]</li> 
+        <li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li>
+	<li>[Removed Column] [UserProjectId]</li></ul>
+
+<li>BugNet_Queries  :</li>  <ul>
+        <li>[QueryId] [int] -> [Id] [uniqueIdentifier]</li> 
+        <li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li></ul>
+
+<li>BugNet_Queries  :</li>  <ul>
+        <li>[QueryId] [int] -> [Id] [uniqueIdentifier]</li> 
+        <li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li></ul>
+
+<li>BugNet_QueryClauses  :</li>  <ul>
+        <li>[QueryClauseId] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[QueryId] [int] -> [QueryId] [uniqueIdentifier]</li></ul>
+ 
+<li>BugNet_ProjectNotifications  :</li>  <ul>
+        <li>[ProjectNotificationid] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li></ul>
+
+<li>BugNet_Issues  :</li>  <ul>
+        <li>[Issueid] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[IssueTitle] -> [Title] </li>
+	<li>[IssueDescription] -> [Description] </li> 
+	<li>[IssueStatusId] [int] -> [StatusId] [uniqueIdentifier]</li> 
+	<li>[IssuePriorityId] [int] -> [PriorityId] [uniqueIdentifier]</li> 
+	<li>[IssueTypeId] [int] -> [TypeId] [uniqueIdentifier]</li>
+	<li>[IssueCategoryId] [int] -> [CategoryId] [uniqueIdentifier]</li>
+	<li>[IssueAffectedMilestoneId] [int] -> [AffectedMilestoneId] [uniqueIdentifier]</li>
+	<li>[IssueResolutionId] [int]-> [ResolutionId] </li>
+	<li>[IssueCreatorUserId] -> [CreatorUserId] </li>
+	<li>[IssueAssignedUserId] -> [AssignedUserId] </li>
+	<li>[IssueOwnerUserId] -> [OwnerUserId] </li>
+	<li>[IssueDueDate] -> [DueDate] </li>
+	<li>[IssueMilestoneId] [int] -> [MilestoneId] [uniqueIdentifier]</li>
+	<li>[IssueVisibility] -> [Visibility] </li>
+	<li>[IssueEstimation] -> [CategoryId] </li>
+	<li>[IssueProgress] -> [CategoryId] </li>
+	<li>[IssueAssignedUserId] -> [AssignedUserId]</li>
+	<li>[IssueOwnerUserId] -> [OwnerUserId] </li>
+	<li>[Issueid] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[Issueid] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[Issueid] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[Issueid] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[Issueid] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[Issueid] [int] -> [Id] [uniqueIdentifier]</li>
+</ul>
+
+<li>BugNet_ProjectMilestones  :</li>  <ul>
+        <li>[MilestoneId] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li>
+	<li>[MilestoneName] -> [Name] </li>
+	<li>[MilestoneImageUrl] -> [ImageUrl] </li>
+	<li>[MilestoneDueDate] -> [DueDate] </li>
+	<li>[MilestoneReleaseDate] -> [ReleaseDate] </li>
+	<li>[MilestoneNotes] -> [Notes] </li>
+	<li>[MilestoneCompleted] -> [Completed] </li></ul>
+
+<li>BugNet_ProjectCategories  :</li>  <ul>
+        <li>[CategoryId] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li>
+	<li>[CategoryName] -> [Name] </li>
+        <li>[ParentCategoryId] [int] -> [ParentCategoryId] [uniqueIdentifier]</li></ul>
+
+<li>BugNet_ProjectPriorities  :</li>  <ul>
+        <li>[PriorityId] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li>
+	<li>[PriorityName] -> [Name] </li>
+        <li>[PriorityImageUrl]  -> [ImageUrl] </li></ul>	
+
+<li>BugNet_ProjectStatus  :</li>  <ul>
+        <li>[StatusId] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li>
+	<li>[StatusName] -> [Name] </li>
+        <li>[StatusImageUrl]  -> [ImageUrl] </li>
+	<li>[IsClosedState] -> [Closed] </li></ul>	
+
+<li>BugNet_ProjectIssueTypes  :</li>  <ul>
+        <li>[IssueTypeId] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li>
+	<li>[IssueTypeName] -> [Name] </li>
+        <li>[IssueTypeImageUrl]  -> [ImageUrl] </li></ul>	
+
+
+<li>BugNet_ProjectResolutions  :</li>  <ul>
+        <li>[ResolutionId] [int] -> [Id] [uniqueIdentifier]</li>
+	<li>[ProjectId] [int] -> [ProjectId] [uniqueIdentifier]</li>
+	<li>[ResolutionName] -> [Name] </li>
+        <li>[ResolutionImageUrl]  -> [ImageUrl] </li></ul>
+
 </div>
  
 
 </ul>         
 
 </html>
+
+
+FK_BugNet_RolePermissions_BugNet_Permissions
+FK_BugNet_RolePermissions_BugNet_Roles

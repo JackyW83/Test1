@@ -1,0 +1,2471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BugNET.Entities.DataContext.BugNetDataContextModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="BugNETEntitiesDataContextBugNetDataContextModelStoreContainer">
+    <EntitySet Name="BugNet_ApplicationLog" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ApplicationLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_HostSettings" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_HostSettings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_IssueAttachments" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_IssueAttachments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_IssueComments" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_IssueComments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_IssueHistory" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_IssueHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_IssueNotifications" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_IssueNotifications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_IssueRevisions" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_IssueRevisions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_Issues" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Issues" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_IssueVotes" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_IssueVotes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_IssueWorkReports" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_IssueWorkReports" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_Languages" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Languages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_Permissions" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Permissions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectCategories" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCategories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectCustomFields" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCustomFields" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectCustomFieldSelections" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCustomFieldSelections" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectCustomFieldTypes" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCustomFieldTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectCustomFieldValues" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCustomFieldValues" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectIssueFields" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectIssueFields" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectIssueTypes" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectIssueTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectMailBoxes" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectMailBoxes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectMilestones" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectMilestones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectNotifications" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectNotifications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectPriorities" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectPriorities" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectResolutions" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectResolutions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_Projects" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_ProjectStatus" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectStatus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_Queries" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Queries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_QueryClauses" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_QueryClauses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_RelatedIssues" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_RelatedIssues" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_RequiredFieldList" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_RequiredFieldList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_Roles" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_UserProfiles" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_UserProfiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_UserProjects" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_UserProjects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_UserRoles" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_UserRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BugNet_RolePermissions" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_RolePermissions" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectCategories1" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_Issues_BugNet_ProjectCategories1">
+      <End Role="BugNet_ProjectCategories" EntitySet="BugNet_ProjectCategories" />
+      <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectIssueTypes" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_Issues_BugNet_ProjectIssueTypes">
+      <End Role="BugNet_ProjectIssueTypes" EntitySet="BugNet_ProjectIssueTypes" />
+      <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectMilestones" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_Issues_BugNet_ProjectMilestones">
+      <End Role="BugNet_ProjectMilestones" EntitySet="BugNet_ProjectMilestones" />
+      <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectMilestones1" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_Issues_BugNet_ProjectMilestones1">
+      <End Role="BugNet_ProjectMilestones" EntitySet="BugNet_ProjectMilestones" />
+      <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectPriorities1" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_Issues_BugNet_ProjectPriorities1">
+      <End Role="BugNet_ProjectPriorities" EntitySet="BugNet_ProjectPriorities" />
+      <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectResolutions" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_Issues_BugNet_ProjectResolutions">
+      <End Role="BugNet_ProjectResolutions" EntitySet="BugNet_ProjectResolutions" />
+      <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_Issues_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_Issues_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectStatus" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_Issues_BugNet_ProjectStatus">
+      <End Role="BugNet_ProjectStatus" EntitySet="BugNet_ProjectStatus" />
+      <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectCategories_BugNet_ProjectCategories" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectCategories_BugNet_ProjectCategories">
+      <End Role="BugNet_ProjectCategories" EntitySet="BugNet_ProjectCategories" />
+      <End Role="BugNet_ProjectCategories1" EntitySet="BugNet_ProjectCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectCategories_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectCategories_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_ProjectCategories" EntitySet="BugNet_ProjectCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectCustomFields_BugNet_ProjectCustomFieldTypes" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectCustomFields_BugNet_ProjectCustomFieldTypes">
+      <End Role="BugNet_ProjectCustomFieldTypes" EntitySet="BugNet_ProjectCustomFieldTypes" />
+      <End Role="BugNet_ProjectCustomFields" EntitySet="BugNet_ProjectCustomFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectCustomFields_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectCustomFields_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_ProjectCustomFields" EntitySet="BugNet_ProjectCustomFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectCustomFieldSelections_BugNet_ProjectCustomFields" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectCustomFieldSelections_BugNet_ProjectCustomFields">
+      <End Role="BugNet_ProjectCustomFields" EntitySet="BugNet_ProjectCustomFields" />
+      <End Role="BugNet_ProjectCustomFieldSelections" EntitySet="BugNet_ProjectCustomFieldSelections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectCustomFieldValues_BugNet_ProjectCustomFields" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectCustomFieldValues_BugNet_ProjectCustomFields">
+      <End Role="BugNet_ProjectCustomFields" EntitySet="BugNet_ProjectCustomFields" />
+      <End Role="BugNet_ProjectCustomFieldValues" EntitySet="BugNet_ProjectCustomFieldValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectIssueFields_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectIssueFields_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_ProjectIssueFields" EntitySet="BugNet_ProjectIssueFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectIssueTypes_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectIssueTypes_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_ProjectIssueTypes" EntitySet="BugNet_ProjectIssueTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectMailBoxes_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectMailBoxes_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_ProjectMailBoxes" EntitySet="BugNet_ProjectMailBoxes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectMilestones_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectMilestones_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_ProjectMilestones" EntitySet="BugNet_ProjectMilestones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectNotifications_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectNotifications_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_ProjectNotifications" EntitySet="BugNet_ProjectNotifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectPriorities_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectPriorities_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_ProjectPriorities" EntitySet="BugNet_ProjectPriorities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_Projects_BugNet_ProjectResolutions" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_Projects_BugNet_ProjectResolutions">
+      <End Role="BugNet_ProjectResolutions" EntitySet="BugNet_ProjectResolutions" />
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_ProjectStatus_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_ProjectStatus_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_ProjectStatus" EntitySet="BugNet_ProjectStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_Queries_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_Queries_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_Queries" EntitySet="BugNet_Queries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_Roles_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_Roles_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_Roles" EntitySet="BugNet_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_UserProjects_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_UserProjects_BugNet_Projects">
+      <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+      <End Role="BugNet_UserProjects" EntitySet="BugNet_UserProjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_QueryClauses_BugNet_Queries" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_QueryClauses_BugNet_Queries">
+      <End Role="BugNet_Queries" EntitySet="BugNet_Queries" />
+      <End Role="BugNet_QueryClauses" EntitySet="BugNet_QueryClauses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_UserRoles_BugNet_Roles" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_UserRoles_BugNet_Roles">
+      <End Role="BugNet_Roles" EntitySet="BugNet_Roles" />
+      <End Role="BugNet_UserRoles" EntitySet="BugNet_UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_RolePermissions_BugNet_Permissions" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_RolePermissions_BugNet_Permissions">
+      <End Role="BugNet_Permissions" EntitySet="BugNet_Permissions" />
+      <End Role="BugNet_RolePermissions" EntitySet="BugNet_RolePermissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BugNet_RolePermissions_BugNet_Roles" Association="BugNET.Entities.DataContext.BugNetDataContextModel.Store.FK_BugNet_RolePermissions_BugNet_Roles">
+      <End Role="BugNet_Roles" EntitySet="BugNet_Roles" />
+      <End Role="BugNet_RolePermissions" EntitySet="BugNet_RolePermissions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BugNet_ApplicationLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Thread" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Level" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Logger" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="User" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Message" Type="varchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Exception" Type="varchar" Nullable="true" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="BugNet_HostSettings">
+    <Key>
+      <PropertyRef Name="SettingName" />
+    </Key>
+    <Property Name="SettingName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SettingValue" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="BugNet_IssueAttachments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IssueId" Type="int" Nullable="false" />
+    <Property Name="FileName" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="80" />
+    <Property Name="FileSize" Type="int" Nullable="false" />
+    <Property Name="ContentType" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Attachment" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="BugNet_IssueComments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IssueId" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_IssueHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IssueId" Type="int" Nullable="false" />
+    <Property Name="FieldChanged" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="OldValue" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NewValue" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_IssueNotifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IssueId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_IssueRevisions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Revision" Type="int" Nullable="false" />
+    <Property Name="IssueId" Type="int" Nullable="false" />
+    <Property Name="Repository" Type="nvarchar" Nullable="false" MaxLength="400" />
+    <Property Name="RevisionAuthor" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="RevisionDate" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="RevisionMessage" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_Issues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StatusId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="PriorityId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="TypeId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="CategoryId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AffectedMilestoneId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="ResolutionId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="CreatorUserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AssignedUserId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="OwnerUserId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="DueDate" Type="datetime" Nullable="true" />
+    <Property Name="MilestoneId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Visibility" Type="int" Nullable="false" />
+    <Property Name="Estimation" Type="decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="Progress" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="LastUpdate" Type="datetime" Nullable="false" />
+    <Property Name="LastUpdateUserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Disabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_IssueVotes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IssueId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_IssueWorkReports">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IssueId" Type="int" Nullable="false" />
+    <Property Name="WorkDate" Type="datetime" Nullable="false" />
+    <Property Name="Duration" Type="decimal" Nullable="false" Precision="4" Scale="2" />
+    <Property Name="IssueCommentId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_Languages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CultureCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CultureName" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="FallbackCulture" Type="nvarchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BugNet_Permissions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PermissionKey" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PermissionName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectCategories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ParentCategoryId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="Disabled" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectCustomFields">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CustomFieldName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CustomFieldRequired" Type="bit" Nullable="false" />
+    <Property Name="CustomFieldDataType" Type="int" Nullable="false" />
+    <Property Name="CustomFieldTypeId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectCustomFieldSelections">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CustomFieldId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Value" Type="nchar" Nullable="false" MaxLength="255" />
+    <Property Name="Name" Type="nchar" Nullable="false" MaxLength="255" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectCustomFieldTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectCustomFieldValues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IssueId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CustomFieldId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CustomFieldValue" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectIssueFields">
+    <Key>
+      <PropertyRef Name="ld" />
+    </Key>
+    <Property Name="ld" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IssueFieldId" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IssueFieldRequired" Type="bit" Nullable="false" />
+    <Property Name="IssueFieldShowOnNewIssue" Type="bit" Nullable="false" />
+    <Property Name="IssueFieldShowOnEditIssue" Type="bit" Nullable="false" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectIssueTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ImageUrl" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectMailBoxes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MailBox" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AssignToUserId" Type="uniqueidentifier" Nullable="true" />
+    <Property Name="IssueTypeId" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectMilestones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ImageUrl" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="DueDate" Type="datetime" Nullable="true" />
+    <Property Name="ReleaseDate" Type="datetime" Nullable="true" />
+    <Property Name="Notes" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Completed" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectNotifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectPriorities">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ImageUrl" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectResolutions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ImageUrl" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_Projects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProjectCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProjectDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AttachmentUploadPath" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="ProjectDisabled" Type="bit" Nullable="false" />
+    <Property Name="ProjectAccessType" Type="int" Nullable="false" />
+    <Property Name="ProjectManagerUserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectCreatorUserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AllowAttachments" Type="bit" Nullable="false" />
+    <Property Name="AttachmentStorageType" Type="int" Nullable="true" />
+    <Property Name="SvnRepositoryUrl" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="AllowIssueVoting" Type="bit" Nullable="false" />
+    <Property Name="ProjectImageFileContent" Type="varbinary(max)" Nullable="true" />
+    <Property Name="ProjectImageFileName" Type="nvarchar" Nullable="true" MaxLength="150" />
+    <Property Name="ProjectImageContentType" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="ProjectImageFileSize" Type="bigint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="BugNet_ProjectStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ImageUrl" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SortOrder" Type="int" Nullable="false" />
+    <Property Name="State" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_Queries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="QueryName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="IsPublic" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_QueryClauses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="QueryId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="BooleanOperator" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FieldName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ComparisonOperator" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FieldValue" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DataType" Type="int" Nullable="false" />
+    <Property Name="IsCustomField" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_RelatedIssues">
+    <Key>
+      <PropertyRef Name="PrimaryIssueId" />
+      <PropertyRef Name="SecondaryIssueId" />
+      <PropertyRef Name="RelationType" />
+    </Key>
+    <Property Name="PrimaryIssueId" Type="int" Nullable="false" />
+    <Property Name="SecondaryIssueId" Type="int" Nullable="false" />
+    <Property Name="RelationType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_RequiredFieldList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FieldName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FieldValue" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BugNet_Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="RoleDescription" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="AutoAssign" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_UserProfiles">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="LastName" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="DisplayName" Type="nvarchar" Nullable="true" MaxLength="100" />
+    <Property Name="IssuesPageSize" Type="int" Nullable="true" />
+    <Property Name="NotificationTypes" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="PreferredLocale" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="LastUpdate" Type="datetime" Nullable="false" />
+    <Property Name="SelectedIssueColumns" Type="nvarchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BugNet_UserProjects">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="ProjectId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ProjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="SelectedIssueColumns" Type="nvarchar" Nullable="true" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="BugNet_UserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BugNet_RolePermissions">
+    <Key>
+      <PropertyRef Name="BugNet_Permissions_Id" />
+      <PropertyRef Name="BugNet_Roles_Id" />
+    </Key>
+    <Property Name="BugNet_Permissions_Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="BugNet_Roles_Id" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_BugNet_Issues_BugNet_ProjectCategories1">
+    <End Role="BugNet_ProjectCategories" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCategories" Multiplicity="0..1" />
+    <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectCategories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_Issues">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_Issues_BugNet_ProjectIssueTypes">
+    <End Role="BugNet_ProjectIssueTypes" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectIssueTypes" Multiplicity="0..1" />
+    <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectIssueTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_Issues">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_Issues_BugNet_ProjectMilestones">
+    <End Role="BugNet_ProjectMilestones" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectMilestones" Multiplicity="0..1" />
+    <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectMilestones">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_Issues">
+        <PropertyRef Name="AffectedMilestoneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_Issues_BugNet_ProjectMilestones1">
+    <End Role="BugNet_ProjectMilestones" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectMilestones" Multiplicity="1" />
+    <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectMilestones">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_Issues">
+        <PropertyRef Name="MilestoneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_Issues_BugNet_ProjectPriorities1">
+    <End Role="BugNet_ProjectPriorities" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectPriorities" Multiplicity="0..1" />
+    <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectPriorities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_Issues">
+        <PropertyRef Name="PriorityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_Issues_BugNet_ProjectResolutions">
+    <End Role="BugNet_ProjectResolutions" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectResolutions" Multiplicity="0..1" />
+    <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectResolutions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_Issues">
+        <PropertyRef Name="ResolutionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_Issues_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="0..1" />
+    <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_Issues">
+        <PropertyRef Name="PriorityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_Issues_BugNet_ProjectStatus">
+    <End Role="BugNet_ProjectStatus" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectStatus" Multiplicity="0..1" />
+    <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Issues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_Issues">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectCategories_BugNet_ProjectCategories">
+    <End Role="BugNet_ProjectCategories" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCategories" Multiplicity="0..1" />
+    <End Role="BugNet_ProjectCategories1" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectCategories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectCategories1">
+        <PropertyRef Name="ParentCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectCategories_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_ProjectCategories" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectCategories">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectCustomFields_BugNet_ProjectCustomFieldTypes">
+    <End Role="BugNet_ProjectCustomFieldTypes" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCustomFieldTypes" Multiplicity="1" />
+    <End Role="BugNet_ProjectCustomFields" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCustomFields" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectCustomFieldTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectCustomFields">
+        <PropertyRef Name="CustomFieldTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectCustomFields_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_ProjectCustomFields" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCustomFields" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectCustomFields">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectCustomFieldSelections_BugNet_ProjectCustomFields">
+    <End Role="BugNet_ProjectCustomFields" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCustomFields" Multiplicity="1" />
+    <End Role="BugNet_ProjectCustomFieldSelections" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCustomFieldSelections" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectCustomFields">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectCustomFieldSelections">
+        <PropertyRef Name="CustomFieldId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectCustomFieldValues_BugNet_ProjectCustomFields">
+    <End Role="BugNet_ProjectCustomFields" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCustomFields" Multiplicity="1" />
+    <End Role="BugNet_ProjectCustomFieldValues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectCustomFieldValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectCustomFields">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectCustomFieldValues">
+        <PropertyRef Name="CustomFieldId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectIssueFields_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_ProjectIssueFields" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectIssueFields" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectIssueFields">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectIssueTypes_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_ProjectIssueTypes" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectIssueTypes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectIssueTypes">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectMailBoxes_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_ProjectMailBoxes" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectMailBoxes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectMailBoxes">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectMilestones_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_ProjectMilestones" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectMilestones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectMilestones">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectNotifications_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_ProjectNotifications" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectNotifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectNotifications">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectPriorities_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_ProjectPriorities" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectPriorities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectPriorities">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_Projects_BugNet_ProjectResolutions">
+    <End Role="BugNet_ProjectResolutions" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectResolutions" Multiplicity="1" />
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_ProjectResolutions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_ProjectStatus_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_ProjectStatus" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_ProjectStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_ProjectStatus">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_Queries_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_Queries" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Queries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_Queries">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_Roles_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_Roles" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_Roles">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_UserProjects_BugNet_Projects">
+    <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Projects" Multiplicity="1" />
+    <End Role="BugNet_UserProjects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_UserProjects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Projects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_UserProjects">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_QueryClauses_BugNet_Queries">
+    <End Role="BugNet_Queries" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Queries" Multiplicity="1" />
+    <End Role="BugNet_QueryClauses" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_QueryClauses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Queries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_QueryClauses">
+        <PropertyRef Name="QueryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_UserRoles_BugNet_Roles">
+    <End Role="BugNet_Roles" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Roles" Multiplicity="1" />
+    <End Role="BugNet_UserRoles" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_UserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_RolePermissions_BugNet_Permissions">
+    <End Role="BugNet_Permissions" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Permissions" Multiplicity="1" />
+    <End Role="BugNet_RolePermissions" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_RolePermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Permissions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_RolePermissions">
+        <PropertyRef Name="BugNet_Permissions_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BugNet_RolePermissions_BugNet_Roles">
+    <End Role="BugNet_RolePermissions" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_RolePermissions" Multiplicity="*" />
+    <End Role="BugNet_Roles" Type="BugNET.Entities.DataContext.BugNetDataContextModel.Store.BugNet_Roles" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="BugNet_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BugNet_RolePermissions">
+        <PropertyRef Name="BugNet_Roles_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BugNET.Entities.DataContext.BugNetDataContextModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Entities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BugNet_ApplicationLog" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ApplicationLog" />
+          <EntitySet Name="BugNet_HostSettings" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_HostSettings" />
+          <EntitySet Name="BugNet_IssueAttachments" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueAttachments" />
+          <EntitySet Name="BugNet_IssueComments" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueComments" />
+          <EntitySet Name="BugNet_IssueHistory" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueHistory" />
+          <EntitySet Name="BugNet_IssueNotifications" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueNotifications" />
+          <EntitySet Name="BugNet_IssueRevisions" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueRevisions" />
+          <EntitySet Name="BugNet_Issues" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues" />
+          <EntitySet Name="BugNet_IssueVotes" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueVotes" />
+          <EntitySet Name="BugNet_IssueWorkReports" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueWorkReports" />
+          <EntitySet Name="BugNet_Languages" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Languages" />
+          <EntitySet Name="BugNet_Permissions" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Permissions" />
+          <EntitySet Name="BugNet_ProjectCategories" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCategories" />
+          <EntitySet Name="BugNet_ProjectCustomFields" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFields" />
+          <EntitySet Name="BugNet_ProjectCustomFieldSelections" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldSelections" />
+          <EntitySet Name="BugNet_ProjectCustomFieldTypes" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldTypes" />
+          <EntitySet Name="BugNet_ProjectCustomFieldValues" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldValues" />
+          <EntitySet Name="BugNet_ProjectIssueFields" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectIssueFields" />
+          <EntitySet Name="BugNet_ProjectIssueTypes" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectIssueTypes" />
+          <EntitySet Name="BugNet_ProjectMailBoxes" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectMailBoxes" />
+          <EntitySet Name="BugNet_ProjectMilestones" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectMilestones" />
+          <EntitySet Name="BugNet_ProjectNotifications" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectNotifications" />
+          <EntitySet Name="BugNet_ProjectPriorities" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectPriorities" />
+          <EntitySet Name="BugNet_ProjectResolutions" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectResolutions" />
+          <EntitySet Name="BugNet_Projects" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" />
+          <EntitySet Name="BugNet_ProjectStatus" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectStatus" />
+          <EntitySet Name="BugNet_Queries" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Queries" />
+          <EntitySet Name="BugNet_QueryClauses" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_QueryClauses" />
+          <EntitySet Name="BugNet_RelatedIssues" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RelatedIssues" />
+          <EntitySet Name="BugNet_RequiredFieldList" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RequiredFieldList" />
+          <EntitySet Name="BugNet_Roles" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Roles" />
+          <EntitySet Name="BugNet_UserProfiles" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserProfiles" />
+          <EntitySet Name="BugNet_UserProjects" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserProjects" />
+          <EntitySet Name="BugNet_UserRoles" EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserRoles" />
+          <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectCategories1" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectCategories1">
+            <End Role="BugNet_ProjectCategories" EntitySet="BugNet_ProjectCategories" />
+            <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectIssueTypes" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectIssueTypes">
+            <End Role="BugNet_ProjectIssueTypes" EntitySet="BugNet_ProjectIssueTypes" />
+            <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectMilestones" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectMilestones">
+            <End Role="BugNet_ProjectMilestones" EntitySet="BugNet_ProjectMilestones" />
+            <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectMilestones1" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectMilestones1">
+            <End Role="BugNet_ProjectMilestones" EntitySet="BugNet_ProjectMilestones" />
+            <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectPriorities1" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectPriorities1">
+            <End Role="BugNet_ProjectPriorities" EntitySet="BugNet_ProjectPriorities" />
+            <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectResolutions" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectResolutions">
+            <End Role="BugNet_ProjectResolutions" EntitySet="BugNet_ProjectResolutions" />
+            <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_Issues_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_Issues_BugNet_ProjectStatus" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectStatus">
+            <End Role="BugNet_ProjectStatus" EntitySet="BugNet_ProjectStatus" />
+            <End Role="BugNet_Issues" EntitySet="BugNet_Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectCategories_BugNet_ProjectCategories" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCategories_BugNet_ProjectCategories">
+            <End Role="BugNet_ProjectCategories" EntitySet="BugNet_ProjectCategories" />
+            <End Role="BugNet_ProjectCategories1" EntitySet="BugNet_ProjectCategories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectCategories_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCategories_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_ProjectCategories" EntitySet="BugNet_ProjectCategories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectCustomFields_BugNet_ProjectCustomFieldTypes" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFields_BugNet_ProjectCustomFieldTypes">
+            <End Role="BugNet_ProjectCustomFieldTypes" EntitySet="BugNet_ProjectCustomFieldTypes" />
+            <End Role="BugNet_ProjectCustomFields" EntitySet="BugNet_ProjectCustomFields" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectCustomFields_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFields_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_ProjectCustomFields" EntitySet="BugNet_ProjectCustomFields" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectCustomFieldSelections_BugNet_ProjectCustomFields" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFieldSelections_BugNet_ProjectCustomFields">
+            <End Role="BugNet_ProjectCustomFields" EntitySet="BugNet_ProjectCustomFields" />
+            <End Role="BugNet_ProjectCustomFieldSelections" EntitySet="BugNet_ProjectCustomFieldSelections" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectCustomFieldValues_BugNet_ProjectCustomFields" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFieldValues_BugNet_ProjectCustomFields">
+            <End Role="BugNet_ProjectCustomFields" EntitySet="BugNet_ProjectCustomFields" />
+            <End Role="BugNet_ProjectCustomFieldValues" EntitySet="BugNet_ProjectCustomFieldValues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectIssueFields_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectIssueFields_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_ProjectIssueFields" EntitySet="BugNet_ProjectIssueFields" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectIssueTypes_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectIssueTypes_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_ProjectIssueTypes" EntitySet="BugNet_ProjectIssueTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectMailBoxes_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectMailBoxes_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_ProjectMailBoxes" EntitySet="BugNet_ProjectMailBoxes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectMilestones_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectMilestones_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_ProjectMilestones" EntitySet="BugNet_ProjectMilestones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectNotifications_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectNotifications_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_ProjectNotifications" EntitySet="BugNet_ProjectNotifications" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectPriorities_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectPriorities_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_ProjectPriorities" EntitySet="BugNet_ProjectPriorities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_Projects_BugNet_ProjectResolutions" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Projects_BugNet_ProjectResolutions">
+            <End Role="BugNet_ProjectResolutions" EntitySet="BugNet_ProjectResolutions" />
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_ProjectStatus_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectStatus_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_ProjectStatus" EntitySet="BugNet_ProjectStatus" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_Queries_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Queries_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_Queries" EntitySet="BugNet_Queries" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_Roles_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Roles_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_Roles" EntitySet="BugNet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_UserProjects_BugNet_Projects" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_UserProjects_BugNet_Projects">
+            <End Role="BugNet_Projects" EntitySet="BugNet_Projects" />
+            <End Role="BugNet_UserProjects" EntitySet="BugNet_UserProjects" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_QueryClauses_BugNet_Queries" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_QueryClauses_BugNet_Queries">
+            <End Role="BugNet_Queries" EntitySet="BugNet_Queries" />
+            <End Role="BugNet_QueryClauses" EntitySet="BugNet_QueryClauses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BugNet_UserRoles_BugNet_Roles" Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_UserRoles_BugNet_Roles">
+            <End Role="BugNet_Roles" EntitySet="BugNet_Roles" />
+            <End Role="BugNet_UserRoles" EntitySet="BugNet_UserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="BugNet_RolePermissions" Association="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RolePermissions">
+            <End Role="BugNet_Permissions" EntitySet="BugNet_Permissions" />
+            <End Role="BugNet_Roles" EntitySet="BugNet_Roles" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="BugNet_ApplicationLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" />
+          <Property Name="Thread" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Level" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Logger" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="User" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Message" Type="String" Nullable="false" MaxLength="4000" Unicode="false" FixedLength="false" />
+          <Property Name="Exception" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="BugNet_HostSettings">
+          <Key>
+            <PropertyRef Name="SettingName" />
+          </Key>
+          <Property Name="SettingName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SettingValue" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="BugNet_IssueAttachments">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="IssueId" Type="Int32" Nullable="false" />
+          <Property Name="FileName" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="FileSize" Type="Int32" Nullable="false" />
+          <Property Name="ContentType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="Attachment" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="BugNet_IssueComments">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="IssueId" Type="Int32" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="Comment" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BugNet_IssueHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="IssueId" Type="Int32" Nullable="false" />
+          <Property Name="FieldChanged" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="OldValue" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NewValue" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BugNet_IssueNotifications">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="IssueId" Type="Int32" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BugNet_IssueRevisions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Revision" Type="Int32" Nullable="false" />
+          <Property Name="IssueId" Type="Int32" Nullable="false" />
+          <Property Name="Repository" Type="String" Nullable="false" MaxLength="400" Unicode="true" FixedLength="false" />
+          <Property Name="RevisionAuthor" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="RevisionDate" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="RevisionMessage" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BugNet_Issues">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="StatusId" Type="Guid" />
+          <Property Name="PriorityId" Type="Guid" />
+          <Property Name="TypeId" Type="Guid" />
+          <Property Name="CategoryId" Type="Guid" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="AffectedMilestoneId" Type="Guid" />
+          <Property Name="ResolutionId" Type="Guid" />
+          <Property Name="CreatorUserId" Type="Guid" Nullable="false" />
+          <Property Name="AssignedUserId" Type="Guid" />
+          <Property Name="OwnerUserId" Type="Guid" />
+          <Property Name="DueDate" Type="DateTime" />
+          <Property Name="MilestoneId" Type="Guid" Nullable="false" />
+          <Property Name="Visibility" Type="Int32" Nullable="false" />
+          <Property Name="Estimation" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+          <Property Name="Progress" Type="Int32" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="LastUpdate" Type="DateTime" Nullable="false" />
+          <Property Name="LastUpdateUserId" Type="Guid" Nullable="false" />
+          <Property Name="Disabled" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BugNet_ProjectCategories" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectCategories1" FromRole="BugNet_Issues" ToRole="BugNet_ProjectCategories" />
+          <NavigationProperty Name="BugNet_ProjectIssueTypes" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectIssueTypes" FromRole="BugNet_Issues" ToRole="BugNet_ProjectIssueTypes" />
+          <NavigationProperty Name="BugNet_ProjectMilestones" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectMilestones" FromRole="BugNet_Issues" ToRole="BugNet_ProjectMilestones" />
+          <NavigationProperty Name="BugNet_ProjectMilestones1" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectMilestones1" FromRole="BugNet_Issues" ToRole="BugNet_ProjectMilestones" />
+          <NavigationProperty Name="BugNet_ProjectPriorities" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectPriorities1" FromRole="BugNet_Issues" ToRole="BugNet_ProjectPriorities" />
+          <NavigationProperty Name="BugNet_ProjectResolutions" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectResolutions" FromRole="BugNet_Issues" ToRole="BugNet_ProjectResolutions" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_Projects" FromRole="BugNet_Issues" ToRole="BugNet_Projects" />
+          <NavigationProperty Name="BugNet_ProjectStatus" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectStatus" FromRole="BugNet_Issues" ToRole="BugNet_ProjectStatus" />
+        </EntityType>
+        <EntityType Name="BugNet_IssueVotes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="IssueId" Type="Int32" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BugNet_IssueWorkReports">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="IssueId" Type="Int32" Nullable="false" />
+          <Property Name="WorkDate" Type="DateTime" Nullable="false" />
+          <Property Name="Duration" Type="Decimal" Nullable="false" Precision="4" Scale="2" />
+          <Property Name="IssueCommentId" Type="Int32" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BugNet_Languages">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CultureCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CultureName" Type="String" Nullable="false" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="FallbackCulture" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="BugNet_Permissions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PermissionKey" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PermissionName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="BugNet_Roles" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RolePermissions" FromRole="BugNet_Permissions" ToRole="BugNet_Roles" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectCategories">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="ParentCategoryId" Type="Guid" />
+          <Property Name="Disabled" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BugNet_Issues" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectCategories1" FromRole="BugNet_ProjectCategories" ToRole="BugNet_Issues" />
+          <NavigationProperty Name="BugNet_ProjectCategories1" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCategories_BugNet_ProjectCategories" FromRole="BugNet_ProjectCategories" ToRole="BugNet_ProjectCategories1" />
+          <NavigationProperty Name="BugNet_ProjectCategories2" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCategories_BugNet_ProjectCategories" FromRole="BugNet_ProjectCategories1" ToRole="BugNet_ProjectCategories" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCategories_BugNet_Projects" FromRole="BugNet_ProjectCategories" ToRole="BugNet_Projects" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectCustomFields">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="CustomFieldName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CustomFieldRequired" Type="Boolean" Nullable="false" />
+          <Property Name="CustomFieldDataType" Type="Int32" Nullable="false" />
+          <Property Name="CustomFieldTypeId" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="BugNet_ProjectCustomFieldTypes" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFields_BugNet_ProjectCustomFieldTypes" FromRole="BugNet_ProjectCustomFields" ToRole="BugNet_ProjectCustomFieldTypes" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFields_BugNet_Projects" FromRole="BugNet_ProjectCustomFields" ToRole="BugNet_Projects" />
+          <NavigationProperty Name="BugNet_ProjectCustomFieldSelections" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFieldSelections_BugNet_ProjectCustomFields" FromRole="BugNet_ProjectCustomFields" ToRole="BugNet_ProjectCustomFieldSelections" />
+          <NavigationProperty Name="BugNet_ProjectCustomFieldValues" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFieldValues_BugNet_ProjectCustomFields" FromRole="BugNet_ProjectCustomFields" ToRole="BugNet_ProjectCustomFieldValues" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectCustomFieldSelections">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CustomFieldId" Type="Guid" Nullable="false" />
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="true" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="true" />
+          <Property Name="SortOrder" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BugNet_ProjectCustomFields" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFieldSelections_BugNet_ProjectCustomFields" FromRole="BugNet_ProjectCustomFieldSelections" ToRole="BugNet_ProjectCustomFields" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectCustomFieldTypes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="BugNet_ProjectCustomFields" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFields_BugNet_ProjectCustomFieldTypes" FromRole="BugNet_ProjectCustomFieldTypes" ToRole="BugNet_ProjectCustomFields" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectCustomFieldValues">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="IssueId" Type="Guid" Nullable="false" />
+          <Property Name="CustomFieldId" Type="Guid" Nullable="false" />
+          <Property Name="CustomFieldValue" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="BugNet_ProjectCustomFields" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFieldValues_BugNet_ProjectCustomFields" FromRole="BugNet_ProjectCustomFieldValues" ToRole="BugNet_ProjectCustomFields" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectIssueFields">
+          <Key>
+            <PropertyRef Name="ld" />
+          </Key>
+          <Property Name="ld" Type="Guid" Nullable="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="IssueFieldId" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IssueFieldRequired" Type="Boolean" Nullable="false" />
+          <Property Name="IssueFieldShowOnNewIssue" Type="Boolean" Nullable="false" />
+          <Property Name="IssueFieldShowOnEditIssue" Type="Boolean" Nullable="false" />
+          <Property Name="SortOrder" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectIssueFields_BugNet_Projects" FromRole="BugNet_ProjectIssueFields" ToRole="BugNet_Projects" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectIssueTypes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SortOrder" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BugNet_Issues" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectIssueTypes" FromRole="BugNet_ProjectIssueTypes" ToRole="BugNet_Issues" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectIssueTypes_BugNet_Projects" FromRole="BugNet_ProjectIssueTypes" ToRole="BugNet_Projects" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectMailBoxes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="MailBox" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="AssignToUserId" Type="Guid" />
+          <Property Name="IssueTypeId" Type="Int32" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectMailBoxes_BugNet_Projects" FromRole="BugNet_ProjectMailBoxes" ToRole="BugNet_Projects" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectMilestones">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SortOrder" Type="Int32" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="DueDate" Type="DateTime" />
+          <Property Name="ReleaseDate" Type="DateTime" />
+          <Property Name="Notes" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Completed" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BugNet_Issues" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectMilestones" FromRole="BugNet_ProjectMilestones" ToRole="BugNet_Issues" />
+          <NavigationProperty Name="BugNet_Issues1" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectMilestones1" FromRole="BugNet_ProjectMilestones" ToRole="BugNet_Issues" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectMilestones_BugNet_Projects" FromRole="BugNet_ProjectMilestones" ToRole="BugNet_Projects" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectNotifications">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectNotifications_BugNet_Projects" FromRole="BugNet_ProjectNotifications" ToRole="BugNet_Projects" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectPriorities">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SortOrder" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BugNet_Issues" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectPriorities1" FromRole="BugNet_ProjectPriorities" ToRole="BugNet_Issues" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectPriorities_BugNet_Projects" FromRole="BugNet_ProjectPriorities" ToRole="BugNet_Projects" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectResolutions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SortOrder" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BugNet_Issues" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectResolutions" FromRole="BugNet_ProjectResolutions" ToRole="BugNet_Issues" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Projects_BugNet_ProjectResolutions" FromRole="BugNet_ProjectResolutions" ToRole="BugNet_Projects" />
+        </EntityType>
+        <EntityType Name="BugNet_Projects">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ProjectName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProjectCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProjectDescription" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="AttachmentUploadPath" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="ProjectDisabled" Type="Boolean" Nullable="false" />
+          <Property Name="ProjectAccessType" Type="Int32" Nullable="false" />
+          <Property Name="ProjectManagerUserId" Type="Guid" Nullable="false" />
+          <Property Name="ProjectCreatorUserId" Type="Guid" Nullable="false" />
+          <Property Name="AllowAttachments" Type="Boolean" Nullable="false" />
+          <Property Name="AttachmentStorageType" Type="Int32" />
+          <Property Name="SvnRepositoryUrl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="AllowIssueVoting" Type="Boolean" Nullable="false" />
+          <Property Name="ProjectImageFileContent" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="ProjectImageFileName" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="ProjectImageContentType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProjectImageFileSize" Type="Int64" />
+          <NavigationProperty Name="BugNet_Issues" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_Issues" />
+          <NavigationProperty Name="BugNet_ProjectCategories" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCategories_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_ProjectCategories" />
+          <NavigationProperty Name="BugNet_ProjectCustomFields" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFields_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_ProjectCustomFields" />
+          <NavigationProperty Name="BugNet_ProjectIssueFields" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectIssueFields_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_ProjectIssueFields" />
+          <NavigationProperty Name="BugNet_ProjectIssueTypes" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectIssueTypes_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_ProjectIssueTypes" />
+          <NavigationProperty Name="BugNet_ProjectMailBoxes" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectMailBoxes_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_ProjectMailBoxes" />
+          <NavigationProperty Name="BugNet_ProjectMilestones" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectMilestones_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_ProjectMilestones" />
+          <NavigationProperty Name="BugNet_ProjectNotifications" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectNotifications_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_ProjectNotifications" />
+          <NavigationProperty Name="BugNet_ProjectPriorities" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectPriorities_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_ProjectPriorities" />
+          <NavigationProperty Name="BugNet_ProjectResolutions" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Projects_BugNet_ProjectResolutions" FromRole="BugNet_Projects" ToRole="BugNet_ProjectResolutions" />
+          <NavigationProperty Name="BugNet_ProjectStatus" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectStatus_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_ProjectStatus" />
+          <NavigationProperty Name="BugNet_Queries" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Queries_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_Queries" />
+          <NavigationProperty Name="BugNet_Roles" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Roles_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_Roles" />
+          <NavigationProperty Name="BugNet_UserProjects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_UserProjects_BugNet_Projects" FromRole="BugNet_Projects" ToRole="BugNet_UserProjects" />
+        </EntityType>
+        <EntityType Name="BugNet_ProjectStatus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SortOrder" Type="Int32" Nullable="false" />
+          <Property Name="State" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BugNet_Issues" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectStatus" FromRole="BugNet_ProjectStatus" ToRole="BugNet_Issues" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectStatus_BugNet_Projects" FromRole="BugNet_ProjectStatus" ToRole="BugNet_Projects" />
+        </EntityType>
+        <EntityType Name="BugNet_Queries">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="QueryName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="IsPublic" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Queries_BugNet_Projects" FromRole="BugNet_Queries" ToRole="BugNet_Projects" />
+          <NavigationProperty Name="BugNet_QueryClauses" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_QueryClauses_BugNet_Queries" FromRole="BugNet_Queries" ToRole="BugNet_QueryClauses" />
+        </EntityType>
+        <EntityType Name="BugNet_QueryClauses">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="QueryId" Type="Guid" Nullable="false" />
+          <Property Name="BooleanOperator" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="FieldName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ComparisonOperator" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="FieldValue" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DataType" Type="Int32" Nullable="false" />
+          <Property Name="IsCustomField" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BugNet_Queries" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_QueryClauses_BugNet_Queries" FromRole="BugNet_QueryClauses" ToRole="BugNet_Queries" />
+        </EntityType>
+        <EntityType Name="BugNet_RelatedIssues">
+          <Key>
+            <PropertyRef Name="PrimaryIssueId" />
+            <PropertyRef Name="SecondaryIssueId" />
+            <PropertyRef Name="RelationType" />
+          </Key>
+          <Property Name="PrimaryIssueId" Type="Int32" Nullable="false" />
+          <Property Name="SecondaryIssueId" Type="Int32" Nullable="false" />
+          <Property Name="RelationType" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BugNet_RequiredFieldList">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="FieldName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="FieldValue" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="BugNet_Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="RoleDescription" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="AutoAssign" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Roles_BugNet_Projects" FromRole="BugNet_Roles" ToRole="BugNet_Projects" />
+          <NavigationProperty Name="BugNet_UserRoles" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_UserRoles_BugNet_Roles" FromRole="BugNet_Roles" ToRole="BugNet_UserRoles" />
+          <NavigationProperty Name="BugNet_Permissions" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RolePermissions" FromRole="BugNet_Roles" ToRole="BugNet_Permissions" />
+        </EntityType>
+        <EntityType Name="BugNet_UserProfiles">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="FirstName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IssuesPageSize" Type="Int32" />
+          <Property Name="NotificationTypes" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="PreferredLocale" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LastUpdate" Type="DateTime" Nullable="false" />
+          <Property Name="SelectedIssueColumns" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="BugNet_UserProjects">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="ProjectId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="ProjectId" Type="Guid" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="SelectedIssueColumns" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="BugNet_Projects" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_UserProjects_BugNet_Projects" FromRole="BugNet_UserProjects" ToRole="BugNet_Projects" />
+        </EntityType>
+        <EntityType Name="BugNet_UserRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="RoleId" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="BugNet_Roles" Relationship="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_UserRoles_BugNet_Roles" FromRole="BugNet_UserRoles" ToRole="BugNet_Roles" />
+        </EntityType>
+        <Association Name="FK_BugNet_Issues_BugNet_ProjectCategories1">
+          <End Role="BugNet_ProjectCategories" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCategories" Multiplicity="0..1" />
+          <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectCategories">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_Issues">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_Issues_BugNet_ProjectIssueTypes">
+          <End Role="BugNet_ProjectIssueTypes" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectIssueTypes" Multiplicity="0..1" />
+          <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectIssueTypes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_Issues">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_Issues_BugNet_ProjectMilestones">
+          <End Role="BugNet_ProjectMilestones" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectMilestones" Multiplicity="0..1" />
+          <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectMilestones">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_Issues">
+              <PropertyRef Name="AffectedMilestoneId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_Issues_BugNet_ProjectMilestones1">
+          <End Role="BugNet_ProjectMilestones" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectMilestones" Multiplicity="1" />
+          <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectMilestones">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_Issues">
+              <PropertyRef Name="MilestoneId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_Issues_BugNet_ProjectPriorities1">
+          <End Role="BugNet_ProjectPriorities" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectPriorities" Multiplicity="0..1" />
+          <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectPriorities">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_Issues">
+              <PropertyRef Name="PriorityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_Issues_BugNet_ProjectResolutions">
+          <End Role="BugNet_ProjectResolutions" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectResolutions" Multiplicity="0..1" />
+          <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectResolutions">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_Issues">
+              <PropertyRef Name="ResolutionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_Issues_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="0..1" />
+          <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_Issues">
+              <PropertyRef Name="PriorityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_Issues_BugNet_ProjectStatus">
+          <End Role="BugNet_ProjectStatus" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectStatus" Multiplicity="0..1" />
+          <End Role="BugNet_Issues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectStatus">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_Issues">
+              <PropertyRef Name="StatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectCategories_BugNet_ProjectCategories">
+          <End Role="BugNet_ProjectCategories" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCategories" Multiplicity="0..1" />
+          <End Role="BugNet_ProjectCategories1" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCategories" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectCategories">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectCategories1">
+              <PropertyRef Name="ParentCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectCategories_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_ProjectCategories" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCategories" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectCategories">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectCustomFields_BugNet_ProjectCustomFieldTypes">
+          <End Role="BugNet_ProjectCustomFieldTypes" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldTypes" Multiplicity="1" />
+          <End Role="BugNet_ProjectCustomFields" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFields" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectCustomFieldTypes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectCustomFields">
+              <PropertyRef Name="CustomFieldTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectCustomFields_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_ProjectCustomFields" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFields" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectCustomFields">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectCustomFieldSelections_BugNet_ProjectCustomFields">
+          <End Role="BugNet_ProjectCustomFields" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFields" Multiplicity="1" />
+          <End Role="BugNet_ProjectCustomFieldSelections" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldSelections" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectCustomFields">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectCustomFieldSelections">
+              <PropertyRef Name="CustomFieldId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectCustomFieldValues_BugNet_ProjectCustomFields">
+          <End Role="BugNet_ProjectCustomFields" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFields" Multiplicity="1" />
+          <End Role="BugNet_ProjectCustomFieldValues" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldValues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectCustomFields">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectCustomFieldValues">
+              <PropertyRef Name="CustomFieldId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectIssueFields_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_ProjectIssueFields" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectIssueFields" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectIssueFields">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectIssueTypes_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_ProjectIssueTypes" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectIssueTypes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectIssueTypes">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectMailBoxes_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_ProjectMailBoxes" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectMailBoxes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectMailBoxes">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectMilestones_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_ProjectMilestones" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectMilestones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectMilestones">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectNotifications_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_ProjectNotifications" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectNotifications" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectNotifications">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectPriorities_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_ProjectPriorities" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectPriorities" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectPriorities">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_Projects_BugNet_ProjectResolutions">
+          <End Role="BugNet_ProjectResolutions" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectResolutions" Multiplicity="1" />
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_ProjectResolutions">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_ProjectStatus_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_ProjectStatus" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectStatus" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_ProjectStatus">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_Queries_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_Queries" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Queries" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_Queries">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_Roles_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_Roles" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_Roles">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_UserProjects_BugNet_Projects">
+          <End Role="BugNet_Projects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Multiplicity="1" />
+          <End Role="BugNet_UserProjects" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserProjects" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_UserProjects">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_QueryClauses_BugNet_Queries">
+          <End Role="BugNet_Queries" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Queries" Multiplicity="1" />
+          <End Role="BugNet_QueryClauses" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_QueryClauses" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Queries">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_QueryClauses">
+              <PropertyRef Name="QueryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BugNet_UserRoles_BugNet_Roles">
+          <End Role="BugNet_Roles" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Roles" Multiplicity="1" />
+          <End Role="BugNet_UserRoles" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BugNet_Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BugNet_UserRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="BugNet_RolePermissions">
+          <End Role="BugNet_Permissions" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Permissions" Multiplicity="*" />
+          <End Role="BugNet_Roles" Type="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Roles" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BugNETEntitiesDataContextBugNetDataContextModelStoreContainer" CdmEntityContainer="Entities1">
+    <EntitySetMapping Name="BugNet_ApplicationLog">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ApplicationLog)">
+        <MappingFragment StoreEntitySet="BugNet_ApplicationLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Thread" ColumnName="Thread" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Logger" ColumnName="Logger" />
+          <ScalarProperty Name="User" ColumnName="User" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Exception" ColumnName="Exception" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_HostSettings">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_HostSettings)">
+        <MappingFragment StoreEntitySet="BugNet_HostSettings">
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_IssueAttachments">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueAttachments)">
+        <MappingFragment StoreEntitySet="BugNet_IssueAttachments">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IssueId" ColumnName="IssueId" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_IssueComments">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueComments)">
+        <MappingFragment StoreEntitySet="BugNet_IssueComments">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IssueId" ColumnName="IssueId" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_IssueHistory">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueHistory)">
+        <MappingFragment StoreEntitySet="BugNet_IssueHistory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IssueId" ColumnName="IssueId" />
+          <ScalarProperty Name="FieldChanged" ColumnName="FieldChanged" />
+          <ScalarProperty Name="OldValue" ColumnName="OldValue" />
+          <ScalarProperty Name="NewValue" ColumnName="NewValue" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_IssueNotifications">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueNotifications)">
+        <MappingFragment StoreEntitySet="BugNet_IssueNotifications">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IssueId" ColumnName="IssueId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_IssueRevisions">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueRevisions)">
+        <MappingFragment StoreEntitySet="BugNet_IssueRevisions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Revision" ColumnName="Revision" />
+          <ScalarProperty Name="IssueId" ColumnName="IssueId" />
+          <ScalarProperty Name="Repository" ColumnName="Repository" />
+          <ScalarProperty Name="RevisionAuthor" ColumnName="RevisionAuthor" />
+          <ScalarProperty Name="RevisionDate" ColumnName="RevisionDate" />
+          <ScalarProperty Name="RevisionMessage" ColumnName="RevisionMessage" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_Issues">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues)">
+        <MappingFragment StoreEntitySet="BugNet_Issues">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="PriorityId" ColumnName="PriorityId" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="AffectedMilestoneId" ColumnName="AffectedMilestoneId" />
+          <ScalarProperty Name="ResolutionId" ColumnName="ResolutionId" />
+          <ScalarProperty Name="CreatorUserId" ColumnName="CreatorUserId" />
+          <ScalarProperty Name="AssignedUserId" ColumnName="AssignedUserId" />
+          <ScalarProperty Name="OwnerUserId" ColumnName="OwnerUserId" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="MilestoneId" ColumnName="MilestoneId" />
+          <ScalarProperty Name="Visibility" ColumnName="Visibility" />
+          <ScalarProperty Name="Estimation" ColumnName="Estimation" />
+          <ScalarProperty Name="Progress" ColumnName="Progress" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="LastUpdateUserId" ColumnName="LastUpdateUserId" />
+          <ScalarProperty Name="Disabled" ColumnName="Disabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_IssueVotes">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueVotes)">
+        <MappingFragment StoreEntitySet="BugNet_IssueVotes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IssueId" ColumnName="IssueId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_IssueWorkReports">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueWorkReports)">
+        <MappingFragment StoreEntitySet="BugNet_IssueWorkReports">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IssueId" ColumnName="IssueId" />
+          <ScalarProperty Name="WorkDate" ColumnName="WorkDate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="IssueCommentId" ColumnName="IssueCommentId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_Languages">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Languages)">
+        <MappingFragment StoreEntitySet="BugNet_Languages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CultureCode" ColumnName="CultureCode" />
+          <ScalarProperty Name="CultureName" ColumnName="CultureName" />
+          <ScalarProperty Name="FallbackCulture" ColumnName="FallbackCulture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_Permissions">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Permissions)">
+        <MappingFragment StoreEntitySet="BugNet_Permissions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PermissionKey" ColumnName="PermissionKey" />
+          <ScalarProperty Name="PermissionName" ColumnName="PermissionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectCategories">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCategories)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectCategories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="ParentCategoryId" ColumnName="ParentCategoryId" />
+          <ScalarProperty Name="Disabled" ColumnName="Disabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectCustomFields">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFields)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectCustomFields">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="CustomFieldName" ColumnName="CustomFieldName" />
+          <ScalarProperty Name="CustomFieldRequired" ColumnName="CustomFieldRequired" />
+          <ScalarProperty Name="CustomFieldDataType" ColumnName="CustomFieldDataType" />
+          <ScalarProperty Name="CustomFieldTypeId" ColumnName="CustomFieldTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectCustomFieldSelections">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldSelections)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectCustomFieldSelections">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CustomFieldId" ColumnName="CustomFieldId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectCustomFieldTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldTypes)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectCustomFieldTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectCustomFieldValues">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldValues)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectCustomFieldValues">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IssueId" ColumnName="IssueId" />
+          <ScalarProperty Name="CustomFieldId" ColumnName="CustomFieldId" />
+          <ScalarProperty Name="CustomFieldValue" ColumnName="CustomFieldValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectIssueFields">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectIssueFields)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectIssueFields">
+          <ScalarProperty Name="ld" ColumnName="ld" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="IssueFieldId" ColumnName="IssueFieldId" />
+          <ScalarProperty Name="IssueFieldRequired" ColumnName="IssueFieldRequired" />
+          <ScalarProperty Name="IssueFieldShowOnNewIssue" ColumnName="IssueFieldShowOnNewIssue" />
+          <ScalarProperty Name="IssueFieldShowOnEditIssue" ColumnName="IssueFieldShowOnEditIssue" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectIssueTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectIssueTypes)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectIssueTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectMailBoxes">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectMailBoxes)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectMailBoxes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MailBox" ColumnName="MailBox" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="AssignToUserId" ColumnName="AssignToUserId" />
+          <ScalarProperty Name="IssueTypeId" ColumnName="IssueTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectMilestones">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectMilestones)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectMilestones">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Completed" ColumnName="Completed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectNotifications">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectNotifications)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectNotifications">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectPriorities">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectPriorities)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectPriorities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectResolutions">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectResolutions)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectResolutions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_Projects">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects)">
+        <MappingFragment StoreEntitySet="BugNet_Projects">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="ProjectDescription" ColumnName="ProjectDescription" />
+          <ScalarProperty Name="AttachmentUploadPath" ColumnName="AttachmentUploadPath" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="ProjectDisabled" ColumnName="ProjectDisabled" />
+          <ScalarProperty Name="ProjectAccessType" ColumnName="ProjectAccessType" />
+          <ScalarProperty Name="ProjectManagerUserId" ColumnName="ProjectManagerUserId" />
+          <ScalarProperty Name="ProjectCreatorUserId" ColumnName="ProjectCreatorUserId" />
+          <ScalarProperty Name="AllowAttachments" ColumnName="AllowAttachments" />
+          <ScalarProperty Name="AttachmentStorageType" ColumnName="AttachmentStorageType" />
+          <ScalarProperty Name="SvnRepositoryUrl" ColumnName="SvnRepositoryUrl" />
+          <ScalarProperty Name="AllowIssueVoting" ColumnName="AllowIssueVoting" />
+          <ScalarProperty Name="ProjectImageFileContent" ColumnName="ProjectImageFileContent" />
+          <ScalarProperty Name="ProjectImageFileName" ColumnName="ProjectImageFileName" />
+          <ScalarProperty Name="ProjectImageContentType" ColumnName="ProjectImageContentType" />
+          <ScalarProperty Name="ProjectImageFileSize" ColumnName="ProjectImageFileSize" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_ProjectStatus">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectStatus)">
+        <MappingFragment StoreEntitySet="BugNet_ProjectStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_Queries">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Queries)">
+        <MappingFragment StoreEntitySet="BugNet_Queries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="QueryName" ColumnName="QueryName" />
+          <ScalarProperty Name="IsPublic" ColumnName="IsPublic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_QueryClauses">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_QueryClauses)">
+        <MappingFragment StoreEntitySet="BugNet_QueryClauses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="QueryId" ColumnName="QueryId" />
+          <ScalarProperty Name="BooleanOperator" ColumnName="BooleanOperator" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="ComparisonOperator" ColumnName="ComparisonOperator" />
+          <ScalarProperty Name="FieldValue" ColumnName="FieldValue" />
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+          <ScalarProperty Name="IsCustomField" ColumnName="IsCustomField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_RelatedIssues">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RelatedIssues)">
+        <MappingFragment StoreEntitySet="BugNet_RelatedIssues">
+          <ScalarProperty Name="PrimaryIssueId" ColumnName="PrimaryIssueId" />
+          <ScalarProperty Name="SecondaryIssueId" ColumnName="SecondaryIssueId" />
+          <ScalarProperty Name="RelationType" ColumnName="RelationType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_RequiredFieldList">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RequiredFieldList)">
+        <MappingFragment StoreEntitySet="BugNet_RequiredFieldList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="FieldValue" ColumnName="FieldValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_Roles">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Roles)">
+        <MappingFragment StoreEntitySet="BugNet_Roles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleDescription" ColumnName="RoleDescription" />
+          <ScalarProperty Name="AutoAssign" ColumnName="AutoAssign" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_UserProfiles">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserProfiles)">
+        <MappingFragment StoreEntitySet="BugNet_UserProfiles">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="IssuesPageSize" ColumnName="IssuesPageSize" />
+          <ScalarProperty Name="NotificationTypes" ColumnName="NotificationTypes" />
+          <ScalarProperty Name="PreferredLocale" ColumnName="PreferredLocale" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="SelectedIssueColumns" ColumnName="SelectedIssueColumns" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_UserProjects">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserProjects)">
+        <MappingFragment StoreEntitySet="BugNet_UserProjects">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="SelectedIssueColumns" ColumnName="SelectedIssueColumns" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BugNet_UserRoles">
+      <EntityTypeMapping TypeName="IsTypeOf(BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserRoles)">
+        <MappingFragment StoreEntitySet="BugNet_UserRoles">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="BugNet_RolePermissions" TypeName="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RolePermissions" StoreEntitySet="BugNet_RolePermissions">
+      <EndProperty Name="BugNet_Permissions">
+        <ScalarProperty Name="Id" ColumnName="BugNet_Permissions_Id" />
+      </EndProperty>
+      <EndProperty Name="BugNet_Roles">
+        <ScalarProperty Name="Id" ColumnName="BugNet_Roles_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ApplicationLog" Width="1.5" PointX="0.75" PointY="0.75" Height="2.5571907552083335" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_HostSettings" Width="1.5" PointX="2.75" PointY="0.75" Height="1.4033821614583335" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueAttachments" Width="1.5" PointX="2.75" PointY="3.75" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueComments" Width="1.5" PointX="4.75" PointY="0.75" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueHistory" Width="1.5" PointX="4.75" PointY="3.75" Height="2.3648893229166656" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueNotifications" Width="1.5" PointX="6.75" PointY="0.75" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueRevisions" Width="1.5" PointX="6.75" PointY="3.75" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Issues" Width="1.5" PointX="7.5" PointY="31.125" Height="6.787822265624996" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueVotes" Width="1.5" PointX="0.75" PointY="7.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_IssueWorkReports" Width="1.5" PointX="2.75" PointY="7.75" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Languages" Width="1.5" PointX="4.75" PointY="7.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Permissions" Width="1.5" PointX="8" PointY="27.875" Height="1.7879850260416745" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCategories" Width="1.5" PointX="5.25" PointY="19" Height="2.7494921875000031" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFields" Width="1.5" PointX="10.25" PointY="33.375" Height="2.9417936197916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldSelections" Width="1.5" PointX="12.5" PointY="32.375" Height="2.1725878906250102" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldTypes" Width="1.5" PointX="8" PointY="39" Height="1.5956835937500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectCustomFieldValues" Width="1.5" PointX="12.5" PointY="35.25" Height="1.9802864583333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectIssueFields" Width="1.5" PointX="5.25" PointY="28.125" Height="2.5571907552083388" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectIssueTypes" Width="1.5" PointX="5.25" PointY="31.5" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectMailBoxes" Width="1.5" PointX="5.25" PointY="34.625" Height="2.1725878906250102" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectMilestones" Width="1.5" PointX="5.25" PointY="37.5" Height="3.5186979166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectNotifications" Width="1.5" PointX="5.25" PointY="41.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectPriorities" Width="1.5" PointX="5.25" PointY="44.375" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectResolutions" Width="1.5" PointX="0.75" PointY="26.125" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Projects" Width="1.5" PointX="3" PointY="31.25" Height="7.1724251302083388" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_ProjectStatus" Width="1.5" PointX="5.25" PointY="47.375" Height="2.5571907552083388" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Queries" Width="1.5" PointX="5.25" PointY="50.875" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_QueryClauses" Width="1.5" PointX="7.5" PointY="50.75" Height="2.749492187499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RelatedIssues" Width="1.5" PointX="6.75" PointY="7.75" Height="1.5956835937500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RequiredFieldList" Width="1.5" PointX="8.75" PointY="0.75" Height="1.5956835937500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_Roles" Width="1.5" PointX="10.25" PointY="29.5" Height="2.5571907552083246" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserProfiles" Width="1.5" PointX="8.75" PointY="3.75" Height="2.7494921875000102" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserProjects" Width="1.5" PointX="5.25" PointY="57.5" Height="1.9802864583333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_UserRoles" Width="1.5" PointX="12.5" PointY="30" Height="1.595683593749996" IsExpanded="true" />
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectCategories1" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="20.37474609375" />
+          <ConnectorPoint PointX="7.71875" PointY="20.37474609375" />
+          <ConnectorPoint PointX="7.71875" PointY="31.125" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectIssueTypes" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="32.682444661458334" />
+          <ConnectorPoint PointX="7.5" PointY="32.682444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectMilestones" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="37.7064111328125" />
+          <ConnectorPoint PointX="7.5" PointY="37.7064111328125" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectMilestones1" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="37.540705566406245" />
+          <ConnectorPoint PointX="7.5" PointY="37.540705566406245" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectPriorities1" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="45.557444661458334" />
+          <ConnectorPoint PointX="7.4947891666666671" PointY="45.557444661458334" />
+          <ConnectorPoint PointX="7.6614558333333331" PointY="45.557444661458334" />
+          <ConnectorPoint PointX="7.71875" PointY="45.557444661458334" />
+          <ConnectorPoint PointX="7.71875" PointY="37.912822265624996" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectResolutions" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="28.489889322916667" />
+          <ConnectorPoint PointX="1.5" PointY="31.15625" />
+          <ConnectorPoint PointX="1.8229191666666667" PointY="31.15625" />
+          <ConnectorPoint PointX="1.9895858333333332" PointY="31.15625" />
+          <ConnectorPoint PointX="3.2604141666666666" PointY="31.15625" />
+          <ConnectorPoint PointX="3.4270808333333336" PointY="31.15625" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="31.15625" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="31.15625" />
+          <ConnectorPoint PointX="4.0729191666666669" PointY="31.15625" />
+          <ConnectorPoint PointX="4.2395858333333329" PointY="31.15625" />
+          <ConnectorPoint PointX="4.916666666666667" PointY="31.15625" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="31.15625" />
+          <ConnectorPoint PointX="7.5" PointY="31.15625" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="34.244944661458334" />
+          <ConnectorPoint PointX="4.916666666666667" PointY="34.244944661458334" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="34.244944661458334" />
+          <ConnectorPoint PointX="7.5" PointY="34.244944661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Issues_BugNet_ProjectStatus" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="48.653595377604169" />
+          <ConnectorPoint PointX="7.5781225" PointY="48.653595377604169" />
+          <ConnectorPoint PointX="7.5781225" PointY="37.912822265624996" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCategories_BugNet_ProjectCategories" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.7819230769230767" PointY="21.749492187500003" />
+          <ConnectorPoint PointX="5.7819230769230767" PointY="21.999492187500003" />
+          <ConnectorPoint PointX="6.2284615384615378" PointY="21.999492187500003" />
+          <ConnectorPoint PointX="6.2284615384615378" PointY="21.749492187500003" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCategories_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="31.25" />
+          <ConnectorPoint PointX="3.75" PointY="20.37474609375" />
+          <ConnectorPoint PointX="5.25" PointY="20.37474609375" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFields_BugNet_ProjectCustomFieldTypes" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.5" PointY="39.797841796875005" />
+          <ConnectorPoint PointX="11" PointY="39.797841796875005" />
+          <ConnectorPoint PointX="11" PointY="36.316793619791667" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFields_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="36.364936895833331" />
+          <ConnectorPoint PointX="5" PointY="36.364936895833331" />
+          <ConnectorPoint PointX="5" PointY="30.875" />
+          <ConnectorPoint PointX="7.635416666666667" PointY="30.875" />
+          <ConnectorPoint PointX="7.802083333333333" PointY="30.875" />
+          <ConnectorPoint PointX="10" PointY="30.875" />
+          <ConnectorPoint PointX="10" PointY="33.125" />
+          <ConnectorPoint PointX="11" PointY="33.125" />
+          <ConnectorPoint PointX="11" PointY="33.375" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFieldSelections_BugNet_ProjectCustomFields" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.75" PointY="33.961293945312505" />
+          <ConnectorPoint PointX="12.5" PointY="33.961293945312505" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectCustomFieldValues_BugNet_ProjectCustomFields" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.75" PointY="35.783396809895834" />
+          <ConnectorPoint PointX="12.5" PointY="35.783396809895834" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectIssueFields_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.1562525" PointY="31.25" />
+          <ConnectorPoint PointX="4.1562525" PointY="29.403595377604169" />
+          <ConnectorPoint PointX="5.25" PointY="29.403595377604169" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectIssueTypes_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="32.682444661458334" />
+          <ConnectorPoint PointX="4.916666666666667" PointY="32.682444661458334" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="32.682444661458334" />
+          <ConnectorPoint PointX="5.25" PointY="32.682444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectMailBoxes_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="35.432468447916662" />
+          <ConnectorPoint PointX="4.916666666666667" PointY="35.432468447916662" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="35.432468447916662" />
+          <ConnectorPoint PointX="5.25" PointY="35.432468447916662" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectMilestones_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="37.961212565104169" />
+          <ConnectorPoint PointX="5.25" PointY="37.961212565104169" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectNotifications_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="38.422425130208339" />
+          <ConnectorPoint PointX="3.75" PointY="42.643992513020834" />
+          <ConnectorPoint PointX="3.8697929166666665" PointY="42.643992513020834" />
+          <ConnectorPoint PointX="4.0364595833333334" PointY="42.643992513020834" />
+          <ConnectorPoint PointX="4.0729191666666669" PointY="42.643992513020834" />
+          <ConnectorPoint PointX="4.2395858333333329" PointY="42.643992513020834" />
+          <ConnectorPoint PointX="4.2760454166666664" PointY="42.643992513020834" />
+          <ConnectorPoint PointX="4.4427120833333325" PointY="42.643992513020834" />
+          <ConnectorPoint PointX="5.25" PointY="42.643992513020834" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectPriorities_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.1562525" PointY="38.422425130208339" />
+          <ConnectorPoint PointX="4.1562525" PointY="45.557444661458334" />
+          <ConnectorPoint PointX="4.2760454166666664" PointY="45.557444661458334" />
+          <ConnectorPoint PointX="4.4427120833333325" PointY="45.557444661458334" />
+          <ConnectorPoint PointX="5.25" PointY="45.557444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Projects_BugNet_ProjectResolutions" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.9062525" PointY="28.489889322916667" />
+          <ConnectorPoint PointX="1.9062525" PointY="34.836212565104169" />
+          <ConnectorPoint PointX="3" PointY="34.836212565104169" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_ProjectStatus_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.3437475" PointY="38.422425130208339" />
+          <ConnectorPoint PointX="3.3437475" PointY="48.653595377604169" />
+          <ConnectorPoint PointX="3.8697929166666665" PointY="48.653595377604169" />
+          <ConnectorPoint PointX="4.0364595833333334" PointY="48.653595377604169" />
+          <ConnectorPoint PointX="4.2760454166666664" PointY="48.653595377604169" />
+          <ConnectorPoint PointX="4.4427120833333325" PointY="48.653595377604169" />
+          <ConnectorPoint PointX="5.25" PointY="48.653595377604169" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Queries_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.3593787499999994" PointY="38.422425130208339" />
+          <ConnectorPoint PointX="4.3593787499999994" PointY="52.057444661458334" />
+          <ConnectorPoint PointX="5.25" PointY="52.057444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_Roles_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.3437475" PointY="31.25" />
+          <ConnectorPoint PointX="3.3437475" PointY="30.96875" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="30.96875" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="30.96875" />
+          <ConnectorPoint PointX="4.0729191666666669" PointY="30.96875" />
+          <ConnectorPoint PointX="4.2395858333333329" PointY="30.96875" />
+          <ConnectorPoint PointX="4.916666666666667" PointY="30.96875" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="30.96875" />
+          <ConnectorPoint PointX="7.635416666666667" PointY="30.96875" />
+          <ConnectorPoint PointX="7.802083333333333" PointY="30.96875" />
+          <ConnectorPoint PointX="9.9166666666666661" PointY="30.96875" />
+          <ConnectorPoint PointX="10.083333333333334" PointY="30.96875" />
+          <ConnectorPoint PointX="10.25" PointY="30.96875" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_UserProjects_BugNet_Projects" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.95312625" PointY="38.422425130208339" />
+          <ConnectorPoint PointX="3.95312625" PointY="58.490143229166662" />
+          <ConnectorPoint PointX="5.25" PointY="58.490143229166662" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_QueryClauses_BugNet_Queries" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="52.057444661458334" />
+          <ConnectorPoint PointX="7.5" PointY="52.057444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.FK_BugNet_UserRoles_BugNet_Roles" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.75" PointY="30.797841796874998" />
+          <ConnectorPoint PointX="12.5" PointY="30.797841796874998" />
+        </AssociationConnector>
+        <AssociationConnector Association="BugNET.Entities.DataContext.BugNetDataContextModel.BugNet_RolePermissions" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.5" PointY="28.6874995" />
+          <ConnectorPoint PointX="11" PointY="28.6874995" />
+          <ConnectorPoint PointX="11" PointY="29.5" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
