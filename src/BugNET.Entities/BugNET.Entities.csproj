@@ -59,6 +59,41 @@
     <Compile Include="Category.cs" />
     <Compile Include="CustomField.cs" />
     <Compile Include="CustomFieldSelection.cs" />
+    <Compile Include="Entities\ApplicationLog.cs" />
+    <Compile Include="DataContext\BugNetDomain.Context.cs" />
+    <Compile Include="Entities\CustomField.cs" />
+    <Compile Include="Entities\CustomFieldSelection.cs" />
+    <Compile Include="Entities\CustomFieldType.cs" />
+    <Compile Include="Entities\CustomFieldValues.cs" />
+    <Compile Include="Entities\HostSetting.cs" />
+    <Compile Include="Entities\Issue.cs" />
+    <Compile Include="Entities\IssueAttachment.cs" />
+    <Compile Include="Entities\IssueComment.cs" />
+    <Compile Include="Entities\IssueHistory.cs" />
+    <Compile Include="Entities\IssueNotification.cs" />
+    <Compile Include="Entities\IssueRevision.cs" />
+    <Compile Include="Entities\IssueType.cs" />
+    <Compile Include="Entities\IssueVote.cs" />
+    <Compile Include="Entities\IssueWorkReport.cs" />
+    <Compile Include="Entities\Language.cs" />
+    <Compile Include="Entities\Milestone.cs" />
+    <Compile Include="Entities\Permission.cs" />
+    <Compile Include="Entities\Priority.cs" />
+    <Compile Include="Entities\Project.cs" />
+    <Compile Include="Entities\ProjectCategory.cs" />
+    <Compile Include="Entities\ProjectIssueField.cs" />
+    <Compile Include="Entities\ProjectMailBox.cs" />
+    <Compile Include="Entities\ProjectNotification.cs" />
+    <Compile Include="Entities\Query.cs" />
+    <Compile Include="Entities\QueryClause.cs" />
+    <Compile Include="Entities\RelatedIssue.cs" />
+    <Compile Include="Entities\RequiredField.cs" />
+    <Compile Include="Entities\Resolution.cs" />
+    <Compile Include="Entities\Role.cs" />
+    <Compile Include="Entities\Status.cs" />
+    <Compile Include="Entities\UserProfile.cs" />
+    <Compile Include="Entities\UserProject.cs" />
+    <Compile Include="Entities\UserRole.cs" />
     <Compile Include="DistinctIssueComparer.cs" />
     <Compile Include="HostSetting.cs">
       <SubType>Code</SubType>
@@ -105,10 +140,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <EntityDeploy Include="DataContext\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
