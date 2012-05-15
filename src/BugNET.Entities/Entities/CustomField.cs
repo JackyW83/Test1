@@ -25,10 +25,10 @@ namespace BugNET.Entities.DataContext
         public string Name { get; set; }
         public bool Required { get; set; }
         public int DataType { get; set; }
-        public Guid CustomFieldTypeId { get; set; }
+        public Guid TypeId { get; set; }
     
         public virtual CustomFieldType CustomFieldType { get; set; }
-        public virtual Project Project { get; set; }
+        //public virtual Project Project { get; set; }
         public virtual ICollection<CustomFieldSelection> CustomFieldSelections { get; set; }
         public virtual ICollection<CustomFieldValue> CustomFieldValues { get; set; }
     }
